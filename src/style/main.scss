@@ -8,13 +8,59 @@ body{
 }
 
 .section-padding {
-    padding: 0 3%;
+    padding: 0 7%;
 }
 
-.top-banner {
-    background: $secondary-color;
+.header {
+    a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+    }
+    .top-banner {
+        font-size: 14px;
+        background: $secondary-color;
+        box-shadow: 0px 0.73px 2px #00000080;
+    }
+    .bottom-banner {
+        background: #000;
+       a {
+        color: #fff;
+       }
+    }
+
+    .header-cart {
+        position: relative;
+        .counter{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            background: $secondary-color;
+            font-size: 10px;
+            color: #3c3c3c;
+            text-align: center;
+        }
+    }
 }
-.bottom-banner {
-    background: #000;
-    color: #fff;
+
+.search-box {
+    padding: 9px;
+    border: 0.5004362463951111px solid #D8D8D8;
+    border-radius: 24px;
+    input {
+        margin-left: 5px;
+        width: 90%;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.bottom-border {
+    // border-bottom: 0.5px solid #575756;
+    box-shadow: 0px 0.73px 2px #00000080;
 }
