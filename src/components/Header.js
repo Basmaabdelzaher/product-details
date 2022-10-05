@@ -20,7 +20,7 @@ function Header() {
             <img src="./images/logo.svg" alt="yeshtry-logo" className="ml-3" />
           </h4>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-5">
           <p>
             <FaAngleLeft className="mx-1" />
             Valentine’s Day Offers! Buy Two Get One Free
@@ -30,7 +30,7 @@ function Header() {
             <FaAngleRight className="mx-1" />
           </p>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-4">
           <Link to="" className="mx-2">
             <FiPhoneCall className="mr-2" />
             Contact Us
@@ -47,16 +47,16 @@ function Header() {
       </div>
 
       <div className="row section-padding justify-content-between align-items-baseline py-3">
-        <div className="col-md-3">
+        <div className="col-md-4">
           <div className="search-box">
             <FaSearch />
             <input type="text" placeholder="Search" />
           </div>
         </div>
-        <div className="col-md-3 text-center">
+        <div className="col-md-4 text-center">
           <img src="./images/adidas.svg" alt="brand-logo" />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <Link to="" className="mx-3">
             <span className="header-cart">
               <MdOutlineShoppingBasket className="mr-1" size="1.9em" />
