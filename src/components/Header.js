@@ -10,10 +10,10 @@ import {
   FiUser,
 } from "react-icons/fi";
 import Breadcrumbs from "./Breadcrumbs";
-function Header() {
+function Header({itemsCount, toggleShoppingCart}) {
   return (
     <div className="header">
-      <div class="row justify-content-between align-items-baseline top-banner pt-2 section-padding">
+      <div className="row justify-content-between align-items-baseline top-banner pt-2 section-padding">
         <div className="col-lg-3">
           <h4>
             <img src="./images/menu.svg" alt="menu-icon"/>
@@ -48,7 +48,7 @@ function Header() {
 
       <div className="row section-padding justify-content-between align-items-baseline py-3">
         <div className="col-md-4">
-          <div className="search-box">
+          <div className="input-container">
             <FaSearch />
             <input type="text" placeholder="Search" />
           </div>
@@ -57,10 +57,10 @@ function Header() {
           <img src="./images/adidas.svg" alt="brand-logo" />
         </div>
         <div className="col-md-4">
-          <Link to="" className="mx-3">
+          <Link to="" className="mx-3" onClick={toggleShoppingCart}>
             <span className="header-cart">
               <MdOutlineShoppingBasket className="mr-1" size="1.9em" />
-              <span className="counter">0</span>
+              <span className="counter">{itemsCount}</span>
             </span>
             Cart
           </Link>
@@ -76,15 +76,15 @@ function Header() {
       </div>
 
       <nav className="row justify-content-between bottom-banner section-padding py-3">
-        <div class="col">
+        <div className="col">
             <Link to="">Men</Link>
         </div>
-        <div class="col"><Link to="">Women</Link></div>
-        <div class="col"><Link to="">Unisex</Link></div>
-        <div class="col"><Link to="">Kids</Link></div>
-        <div class="col"><Link to="">Best Sellers</Link></div>
-        <div class="col"><Link to="">New Arrivals</Link></div>
-        <div class="col"><Link to="" style={{color: 'red'}}>Offers</Link></div>
+        <div className="col"><Link to="">Women</Link></div>
+        <div className="col"><Link to="">Unisex</Link></div>
+        <div className="col"><Link to="">Kids</Link></div>
+        <div className="col"><Link to="">Best Sellers</Link></div>
+        <div className="col"><Link to="">New Arrivals</Link></div>
+        <div className="col"><Link to="" style={{color: 'red'}}>Offers</Link></div>
       </nav>
 
       <Breadcrumbs />
