@@ -21,7 +21,7 @@ function Header({itemsCount, toggleShoppingCart}) {
           </h4>
         </div>
         <div className="col-lg-5">
-          <p>
+          <p className="small">
             <FaAngleLeft className="mx-1" />
             Valentine’s Day Offers! Buy Two Get One Free
             <Link to="" className="ml-1">
